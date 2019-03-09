@@ -9,8 +9,8 @@ import Grid from '@material-ui/core/Grid';
 import MovieLanguage from './MovieLanguage'; 
 import MovieGenre from './MovieGenre';
 
-
 const genre = ["Crime","Thriller","Drama","Action","Adventure","Fantasy","Comedy","Horror","Suspense"];
+
 class MovieList extends Component {
     constructor(props) {
         super(props);
@@ -57,7 +57,7 @@ class MovieList extends Component {
          filterList.push(result);
         }  
         return filterList;
-}
+    }
     
     filtersByLanguage(arr, filters){
             var filterList = [];
