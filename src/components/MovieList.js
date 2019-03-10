@@ -8,6 +8,7 @@ import YouTube from 'react-youtube';
 import Grid from '@material-ui/core/Grid';
 import MovieLanguage from './MovieLanguage'; 
 import MovieGenre from './MovieGenre';
+import Typography from '@material-ui/core/CardMedia';
 
 const genre = ["Drama","Action","Comedy","Crime","Thriller","Adventure","Fantasy","Horror","Suspense"];
 
@@ -128,8 +129,9 @@ class MovieList extends Component {
                         title="Paella dish"
                         />
                         <IconButton className="play-icon" aria-label="Play/pause" onClick={() => this.playVideo(post.TrailerURL)}>
-                            <PlayArrowIcon className={classes.playIcon}/>
+                            <PlayArrowIcon className={classes.playIcon}/> 
                         </IconButton>
+                        <Typography className="title-icon">{post.EventTitle}</Typography>
                     </Card>
                    </div>
                ))}

@@ -65,6 +65,18 @@ body{
   right: 40%;
 }
 
+.title-icon{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  top: 85%;
+  right: 10%;
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: oblique;
+}
+
 .language-checkbox{
   padding-left: 82%;
 }
