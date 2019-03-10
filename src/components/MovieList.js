@@ -97,11 +97,10 @@ class MovieList extends Component {
           };
         return (
             <div>
-                <div>
-                <MovieGenre genre={genre} callbackFromParent={this.myCallbackGenre}></MovieGenre>
-                <MovieLanguage languages={this.state.language} callbackFromParent={this.myCallback}></MovieLanguage>
+                <div>               
+                    <MovieGenre genre={genre} callbackFromParent={this.myCallbackGenre}></MovieGenre>
+                    <MovieLanguage languages={this.state.language} callbackFromParent={this.myCallback}></MovieLanguage>
                 </div>
-            
             {this.state.TrailerURL ? 
             <div className="movie-trailer">
                 <Grid item xs={4}>
@@ -111,7 +110,7 @@ class MovieList extends Component {
                             opts={opts}
                             onReady={this._onReady}
                         />
-                <span>Harsh</span>
+                <span></span>
                 </Grid>
                 <Grid item xs={4}>
                     Harsh
