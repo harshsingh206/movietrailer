@@ -9,7 +9,7 @@ import Grid from '@material-ui/core/Grid';
 import MovieLanguage from './MovieLanguage'; 
 import MovieGenre from './MovieGenre';
 
-const genre = ["Crime","Thriller","Drama","Action","Adventure","Fantasy","Comedy","Horror","Suspense"];
+const genre = ["Drama","Action","Comedy","Crime","Thriller","Adventure","Fantasy","Horror","Suspense"];
 
 class MovieList extends Component {
     constructor(props) {
@@ -30,7 +30,7 @@ class MovieList extends Component {
 
     myCallbackGenre = (genre) => {
         if(genre.length > 0){
-            let filterList = this.structureLangauge(genre);
+            let filterList = this.structureGenre(genre);
             this.getFinalList(filterList);
         }
         else{
@@ -40,6 +40,11 @@ class MovieList extends Component {
 
     structureLangauge(language){
         let filterList = this.filtersByLanguage(this.movieList, language);
+        return filterList;
+    }
+
+    structureGenre(genre){
+        let filterList = this.filtersByGenre(this.movieList, genre);
         return filterList;
     }
 
