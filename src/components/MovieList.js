@@ -98,8 +98,8 @@ class MovieList extends Component {
         return (
             <div>
                 <div>
-                <MovieLanguage languages={this.state.language} callbackFromParent={this.myCallback}></MovieLanguage>
                 <MovieGenre genre={genre} callbackFromParent={this.myCallbackGenre}></MovieGenre>
+                <MovieLanguage languages={this.state.language} callbackFromParent={this.myCallback}></MovieLanguage>
                 </div>
             
             {this.state.TrailerURL ? 

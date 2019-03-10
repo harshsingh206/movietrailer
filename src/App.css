@@ -64,12 +64,12 @@ body{
 }
 
 .language-checkbox{
-  float: right;
-  padding-right: 100px;
+  padding-left: 82%;
 }
 
 .genre-checkbox{
-  padding-left: 82%;
+  float: right;
+  padding-right: 100px;
 }
 
 .video-container{
